@@ -147,7 +147,18 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+.box h2 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  margin-bottom: 10px !important;
+}
 
+.box p {
+  color: #111827 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
 .primary {
   background: #7686e5;
   color: white;
