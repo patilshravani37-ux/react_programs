@@ -10,8 +10,8 @@ body {
 }
 
 .navbar {
-  background: #312e81;
-  color: white;
+  background: #312e81 !important;
+  color: white !important;
   padding: 18px 5%;
   display: flex;
   justify-content: space-between;
@@ -20,13 +20,13 @@ body {
 
 .navbar h2 {
   margin: 0;
-  color: white;
+  color: white !important;
 }
 
 .navbar button {
   background: transparent;
   border: none;
-  color: white;
+  color: white !important;
   padding: 10px 15px;
   margin: 3px;
   border-radius: 7px;
@@ -34,7 +34,7 @@ body {
 }
 
 .navbar button:hover {
-  background: #4f46e5;
+  background: #4f46e5 !important;
 }
 
 .container {
@@ -51,6 +51,12 @@ body {
   font-size: 40px;
 }
 
+.home > p {
+  color: #111827 !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .home-cards {
   display: flex;
   gap: 20px;
@@ -60,16 +66,31 @@ body {
 }
 
 .home-cards div {
-  background: white;
+  background: white !important;
   padding: 30px;
   width: 250px;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 5px 20px #0002;
+  border: 1px solid #d1d5db !important;
 }
 
 .home-cards div:hover {
   transform: translateY(-5px);
+}
+
+.home-cards div h2 {
+  color: #111827 !important;
+  font-weight: 800 !important;
+  font-size: 24px !important;
+  margin-bottom: 10px !important;
+}
+
+.home-cards div p {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  opacity: 1 !important;
 }
 
 .examples {
@@ -87,7 +108,7 @@ body {
   text-align: left;
   font-size: 17px;
   cursor: pointer;
-  color:#181717 !important;
+  color: #181717 !important;
 }
 
 .example:hover {
@@ -96,7 +117,7 @@ body {
 
 .example span {
   float: right;
-  color:#181717 !important;
+  color: #181717 !important;
 }
 
 .output-page {
@@ -165,8 +186,17 @@ label input {
   font-weight: bold;
 }
 
-@media (max-width: 700px) {
+h1 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
 
+.page-title {
+  color: #111827 !important;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
   .navbar {
     flex-direction: column;
     gap: 15px;
@@ -178,59 +208,5 @@ label input {
 
   .home h1 {
     font-size: 30px;
-}
-}
-h1 {
-  color: #111827 !important;
-  font-weight: 700 !important;
-}
-
-.navbar {
-  background: #312e81 !important;
-}
-
-.navbar h2 {
-  color: white !important;
-}
-
-.navbar button {
-  color: white !important;
-}
-
-.navbar button:hover {
-  background: #4f46e5 !important;
-}
-.home > p {
-  color: #111827 !important;
-  font-weight: 600;
-  font-size: 18px;
-}
-.page-title {
-  color: #111827 !important;
-  font-weight: 700;
-}
-/* Card chya aatla background / overlay faint text dark karay sathi */
-.home-cards div {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Faint overlay text clear ani dark karay sathi */
-.home-cards div::before {
-  content: "COMPONENTS"; /* Faint text cha visibility vadhavnyasathi */
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 28px;
-  font-weight: 900;
-  color: #111827 !important; /* Fully Dark Black */
-  opacity: 0.8 !important; /* Clear distil */
-  text-transform: uppercase;
-  z-index: 0;
-}
-
-.home-cards div h2,
-.home-cards div p {
-  position: relative;
-  z-index: 1; /* Aatla text hyachyavr neat disawa mhanun */
+  }
 }
