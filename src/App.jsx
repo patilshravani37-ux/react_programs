@@ -71,7 +71,7 @@ function App() {
         {/* EXAMPLES LIST */}
         {!selected && page !== "Home" && (
           <div>
-            <h1>{page}</h1>
+           <h1 className="page-title">{page}</h1>
             <p>Click on an example to see its output.</p>
 
             <div className="examples">
