@@ -178,9 +178,25 @@ label input {
 
   .home h1 {
     font-size: 30px;
-  }
-  .container h1 {
-  color: #111827;
-  font-weight: 700;
 }
+}
+h1 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+.navbar {
+  background: #312e81 !important;
+}
+
+.navbar h2 {
+  color: white !important;
+}
+
+.navbar button {
+  color: white !important;
+}
+
+.navbar button:hover {
+  background: #4f46e5 !important;
 }
