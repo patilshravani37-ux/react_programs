@@ -200,3 +200,8 @@ h1 {
 .navbar button:hover {
   background: #4f46e5 !important;
 }
+.home > p {
+  color: #111827 !important;
+  font-weight: 600;
+  font-size: 18px;
+}
