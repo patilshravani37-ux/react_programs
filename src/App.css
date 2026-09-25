@@ -209,3 +209,28 @@ h1 {
   color: #111827 !important;
   font-weight: 700;
 }
+/* Card chya aatla background / overlay faint text dark karay sathi */
+.home-cards div {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Faint overlay text clear ani dark karay sathi */
+.home-cards div::before {
+  content: "COMPONENTS"; /* Faint text cha visibility vadhavnyasathi */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #111827 !important; /* Fully Dark Black */
+  opacity: 0.8 !important; /* Clear distil */
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.home-cards div h2,
+.home-cards div p {
+  position: relative;
+  z-index: 1; /* Aatla text hyachyavr neat disawa mhanun */
+}
