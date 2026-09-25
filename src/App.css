@@ -10,8 +10,8 @@ body {
 }
 
 .navbar {
-  background: #5e5bb4;
-  color: rgb(31, 30, 30);
+  background: #312e81;
+  color: white;
   padding: 18px 5%;
   display: flex;
   justify-content: space-between;
@@ -20,6 +20,7 @@ body {
 
 .navbar h2 {
   margin: 0;
+  color: white;
 }
 
 .navbar button {
@@ -33,7 +34,7 @@ body {
 }
 
 .navbar button:hover {
-  background: #798bf6;
+  background: #4f46e5;
 }
 
 .container {
@@ -178,4 +179,8 @@ label input {
   .home h1 {
     font-size: 30px;
   }
+  .container h1 {
+  color: #111827;
+  font-weight: 700;
+}
 }
